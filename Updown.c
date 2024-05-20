@@ -17,7 +17,7 @@ int setNumber() {
 void printHigher(int max, int min) {
 	printf("맞추어야 할 정수가 입력한 정수 %d 보다 큽니다.(시도 횟수 : %d 번)\n", min, count);
 	if (count >= 5) {
-		printf("5회 초과\n");
+		printf("5회를 초과하였습니다. 종료합니다. \n");
 		draw = 0;
 	}
 	else printf("%d ~ %d 사이의 정수를 다시 입력하세요. > ", min + 1, max);
@@ -26,7 +26,7 @@ void printHigher(int max, int min) {
 void printLower(int max, int min) {
 	printf("맞추어야 할 정수가 입력한 정수 %d 보다 작습니다. (시도 횟수 : %d 번)\n", max, count);
 	if (count >= 5) {
-		printf("5회 초과\n");
+		printf("5회를 초과하였습니다. 종료합니다. \n");
 		draw = 0;
 	}
 	else printf("%d ~ %d 사이의 정수를 다시 입력하세요. > ", min, max);
